@@ -1,0 +1,11 @@
+data:
+  raw: data/raw/BoomBikes_dataset.csv
+  interim: data/interim/
+  processed: data/processed/
+
+artifacts:
+  models: models/
+  outputs: outputs/
+
+notebooks:
+  dir: notebooks/

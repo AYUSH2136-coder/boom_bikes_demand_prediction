@@ -1,0 +1,30 @@
+project:
+  name: boom-bikes-demand-prediction
+  target: cnt
+  random_state: 42
+  test_size: 0.2
+  val_size: 0.1
+
+features:
+  drop_columns:
+    - instant
+    - dteday
+    - casual
+    - registered
+  categorical:
+    - season
+    - yr
+    - mnth
+    - holiday
+    - weekday
+    - workingday
+    - weathersit
+  numeric:
+    - temp
+    - atemp
+    - hum
+    - windspeed
+
+preprocessing:
+  scale_numeric: true
+  scaler: standard   # standard | minmax

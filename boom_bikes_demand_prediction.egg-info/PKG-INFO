@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: boom-bikes-demand-prediction
+Version: 0.1.0
+Summary: End-to-end ML pipeline to predict daily bike rental demand for BoomBikes.
+Author-email: Your Name <you@example.com>
+Keywords: machine-learning,regression,bike-sharing,demand-prediction,xgboost,lightgbm,catboost,shap
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<3.0,>=1.26
+Requires-Dist: pandas<3.0,>=2.1
+Requires-Dist: scipy<2.0,>=1.12
+Requires-Dist: scikit-learn<2.0,>=1.4
+Requires-Dist: xgboost<3.0,>=2.0
+Requires-Dist: lightgbm<5.0,>=4.3
+Requires-Dist: catboost<2.0,>=1.2
+Requires-Dist: shap<1.0,>=0.46
+Requires-Dist: matplotlib<4.0,>=3.8
+Requires-Dist: seaborn<1.0,>=0.13
+Requires-Dist: joblib<2.0,>=1.3
+Requires-Dist: pyyaml<7.0,>=6.0
+Requires-Dist: statsmodels<1.0,>=0.14
+Provides-Extra: notebook
+Requires-Dist: jupyter<2.0,>=1.1; extra == "notebook"
+Requires-Dist: jupyterlab<5.0,>=4.2; extra == "notebook"
+Requires-Dist: ipykernel<7.0,>=6.29; extra == "notebook"
+Requires-Dist: ipywidgets<9.0,>=8.1; extra == "notebook"
+Requires-Dist: nbformat<6.0,>=5.10; extra == "notebook"
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.0; extra == "dev"
+Requires-Dist: pytest-cov<7.0,>=5.0; extra == "dev"
+Requires-Dist: ruff<1.0,>=0.5; extra == "dev"
+Requires-Dist: black<25.0,>=24.0; extra == "dev"
+Requires-Dist: isort<6.0,>=5.13; extra == "dev"
+Requires-Dist: pre-commit<4.0,>=3.7; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.10; extra == "dev"
+Requires-Dist: pandas-stubs<3.0,>=2.2; extra == "dev"
+Provides-Extra: all
+Requires-Dist: boom-bikes-demand-prediction[dev,notebook]; extra == "all"
+Dynamic: license-file
